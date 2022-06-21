@@ -1,2 +1,57 @@
 # Django_CRUD
-Django CRUD(Create, Retrieve, Update and Delete)
+Django CRUD(Create, Retrieve/Read, Update and Delete)
+
+
+Create a new virtual environment in that folder named env and install django in it.
+
+Create a new django project. Use your Zuriboard Student ID as the name of the project.
+
+Create a new application using the django startapp command. The app should be called blog.
+
+Add the blog app to the main_projects INSTALLED_APPS.
+
+ 
+
+Replace the content of blog/models.py with the content of this starter file: https://github.com/TobeTek/Zuri/blob/main/starter-files/Django-CRUD/models.py . We should now have a Post model in blog/models.py.
+
+Create migrations for your new model using the makemigrations django command. 
+
+Run all migrations using, migrate django command.
+
+To make our Post model accessible from the admin site, register the Post model in blog/admin.py 
+
+ 
+
+Now for the views. 
+
+In blog/views.py,  
+create a new view/class PostListView, which inherits django’s generic ListView
+
+Create another view, PostCreateView, which inherits django’s generic CreateView
+
+Create another view, PostDetailView, which inherits django’s generic DetailView
+
+Create another view PostUpdateView, which inherits django’s generic UpdateView
+ 
+Create another view PostDeleteView, which inherits django’s generic DeleteView
+
+
+Time to create templates.
+
+Create a new folder templates under the blog app.  
+
+Copy all the files and folders from https://github.com/TobeTek/Zuri/tree/main/starter-files/Django-CRUD/templates to blog/templates folder.
+
+ 
+
+Create a file, blog/urls.py, if it doesn’t already exist.
+
+Replace the content of blog/urls.py with the content of https://github.com/TobeTek/Zuri/blob/main/starter-files/Django-CRUD/urls.py 
+
+ 
+
+Go to your project_app/urls.py and add a new url pattern.
+
+Job Done!s.
+Note:
+Level = "Beginner"
